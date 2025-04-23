@@ -23,14 +23,18 @@ public class App {
         viewConsole.printArray(personas);
         viewConsole.printMessage("Arreglo Personas Ordenado por Edad");
         personaController.ordenarPorEdad(personas);
-        viewConsole.printMessage("Buscar personas con edsd: 40 años");
-        int resultado = PersonaController.buscarPorEdad(personas, edad);
+        viewConsole.printMessage("Buscar personas con edad: 40 años");
+        int edad= 40;
+        
+        
+        int resultado = PersonaController.buscarPorEdad(personas, edad, 0, personas.length - 1);
 
         if (resultado != -1) {
-            System.out.println("La persona con la edad " + edad + " es " + personas[resultado].nombre);
+            System.out.println("La persona con la edad " + edad + " es " + personas[resultado].getNombre());
         } else {
             System.out.println("No se encontró ninguna persona con esa edad.");
         }
+
 
 
         /// TODO: GENERAR INSTNACIA DE CONTROLLE Y ORDENAR EL METODO DESPUES BUSCAR POR

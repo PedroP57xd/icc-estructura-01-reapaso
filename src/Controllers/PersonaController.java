@@ -35,10 +35,8 @@ public class PersonaController {
      * @return La primera Persona con la edad especificada, o null si no se
      *         encuentra.
      */
-    public int buscarPorEdad(Persona[] personas, int edad) {
+    public static int buscarPorEdad(Persona[] personas, int edad, int bajo, int alto) {
         
-        int bajo;
-        int alto;
         if (bajo > alto) {
             return -1; 
         }
