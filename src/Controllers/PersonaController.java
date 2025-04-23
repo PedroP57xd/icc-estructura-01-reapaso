@@ -54,4 +54,6 @@ public class PersonaController {
         // throw new UnsupportedOperationException("Not implemented yet.");
 
     }
+        return valorCentro;
+}
 }
